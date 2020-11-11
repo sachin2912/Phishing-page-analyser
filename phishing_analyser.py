@@ -48,6 +48,8 @@ class MainApp(QMainWindow,ui):
                 elif type(result[key]) == type(""):
                     content+="\n" + "  " +key
                     content+=" : "+result[key]
+                else:
+                    content+="\n   "+key + ":  "+ str(result[key])
 
                 content+= "\n\n"
             content+= "\n    Thats all for this URL , now decide yourself with the information "+str('\N{thinking face}') + "\n"

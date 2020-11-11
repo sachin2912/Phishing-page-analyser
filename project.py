@@ -113,7 +113,7 @@ def analyse_url(url):                            # function to execute all the f
             temp_tags.append(str(" Link Text : ") + name + str(" , Redirect Link: '") + result_a_tag[name][0] + str("'      ") + str(u'\u2714'))   
             count_r+=1  
     final_result["All the anchor tags of the page "] = temp_tags
-    final_result["Count of Redirects outside given URL hostname  :  "] = count_w
+    final_result["Count of Redirects outside given URL hostname"] = count_w
     final_result[" Conclusion "] = " Can be a phishing page" if count_w>(count_r/2) else " seems to be safe "
     # print (final_result)
     return final_result
